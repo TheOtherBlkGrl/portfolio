@@ -604,7 +604,7 @@
       /* Case study tabs: stay pinned while scrolling a panel */
       .tabs-header {
         position: sticky;
-        top: 60px;
+        top: 95px;
         z-index: 50;
         background: rgba(247, 245, 240, 0.97);
         backdrop-filter: blur(8px);
@@ -628,7 +628,30 @@
       }
 
       .case-panel {
-        scroll-margin-top: 135px;
+        scroll-margin-top: 165px;
+      }
+
+      /* Nav: one compact scrollable row of links instead of wrapping */
+      .nav-links {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        justify-content: flex-start;
+      }
+
+      .nav-links::-webkit-scrollbar {
+        display: none;
+      }
+
+      .nav-links a {
+        flex: 0 0 auto;
+        white-space: nowrap;
+      }
+
+      /* Anchor jumps land below the two-row mobile nav */
+      section {
+        scroll-margin-top: 100px;
       }
     }
   </style>
