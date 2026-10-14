@@ -600,6 +600,36 @@
         grid-template-columns: 1fr;
         gap: 0.35rem;
       }
+
+      /* Case study tabs: stay pinned while scrolling a panel */
+      .tabs-header {
+        position: sticky;
+        top: 60px;
+        z-index: 50;
+        background: rgba(247, 245, 240, 0.97);
+        backdrop-filter: blur(8px);
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 0.6rem 0.25rem;
+        margin-bottom: 1rem;
+        scrollbar-width: none;
+      }
+
+      .tabs-header::-webkit-scrollbar {
+        display: none;
+      }
+
+      .tab-btn {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        padding: 0.55rem 0.95rem;
+        font-size: 0.85rem;
+      }
+
+      .case-panel {
+        scroll-margin-top: 135px;
+      }
     }
   </style>
 </head>
@@ -1169,6 +1199,10 @@
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
       document.getElementById('case-' + id).classList.add('active');
       btn.classList.add('active');
+      if (window.innerWidth <= 700) {
+        btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        document.getElementById('case-' + id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }
 
   </script>
