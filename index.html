@@ -620,7 +620,7 @@
       /* Case study tabs: stay pinned while scrolling a panel */
       .tabs-header {
         position: sticky;
-        top: 95px;
+        top: 74px;
         z-index: 50;
         background: rgba(247, 245, 240, 0.97);
         backdrop-filter: blur(8px);
@@ -644,22 +644,41 @@
       }
 
       .case-panel {
-        scroll-margin-top: 165px;
+        scroll-margin-top: 140px;
       }
 
-      /* Nav: one compact scrollable row of links instead of wrapping */
+      /* Nav: compact two rows - brand + resume button on top, links scroll below */
+      .navbar {
+        padding: 0.55rem 1rem;
+      }
+
       .nav-container {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        gap: 0.55rem;
+      }
+
+      .brand {
+        order: 1;
+        font-size: 0.82rem;
+        letter-spacing: 0.06em;
+        white-space: nowrap;
+      }
+
+      .nav-resume {
+        order: 2;
+        font-size: 0.8rem;
+        padding: 0.4rem 0.85rem;
       }
 
       .nav-links {
-        flex: 1 1 auto;
-        min-width: 0;
+        order: 3;
+        flex: 1 1 100%;
         flex-wrap: nowrap;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
         justify-content: flex-start;
+        gap: 1rem;
       }
 
       .nav-links::-webkit-scrollbar {
@@ -673,7 +692,7 @@
 
       /* Anchor jumps land below the two-row mobile nav */
       section {
-        scroll-margin-top: 100px;
+        scroll-margin-top: 96px;
       }
     }
   </style>
