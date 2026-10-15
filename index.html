@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clarissa Ward | Operations, Logistics & Executive Support Leadership</title>
+    <meta name="description" content="Operations and logistics leader with 15+ years across construction, distribution, and healthcare. Dispatch, fleet ops, SOPs, and executive support." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #182232;
+      --navy-light: #223046;
+      --cream: #F7F5F0;
+      --card-bg: #FFFFFF;
+      --border: #E4E0D8;
+      --rust: #C84B31;
+      --rust-soft: #FDF1EE;
+      --gold: #D99B26;
+      --text-main: #1E293B;
+      --text-muted: #5A6578;
+      --shadow: 0 8px 24px rgba(24, 34, 50, 0.06);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--cream);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, .serif {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Sticky Top Nav */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(24, 34, 50, 0.97);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 0.85rem 1.5rem;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      font-size: 0.95rem;
+      color: #fff;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.25rem;
+      font-size: 0.85rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #CBD5E1;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    /* Frozen resume button, top right of the sticky nav */
+    .nav-resume {
+      background: var(--rust);
+      color: #fff;
+      padding: 0.5rem 1.1rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      white-space: nowrap;
+      transition: opacity 0.2s;
+    }
+
+    .nav-resume:hover {
+      opacity: 0.9;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      color: #fff;
+      padding: 4.5rem 1.5rem 3.5rem;
+      border-bottom: 4px solid var(--rust);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--rust);
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .hero .eyebrow {
+      color: var(--gold);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 5vw, 3.75rem);
+      letter-spacing: 0.02em;
+      line-height: 1.15;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+      color: #E2E8F0;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .hero-tagline {
+      font-size: 1.05rem;
+      color: var(--gold);
+      font-style: italic;
+      margin-bottom: 2rem;
+      max-width: 700px;
+    }
+
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 1.75rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      font-size: 0.88rem;
+      color: #CBD5E1;
+    }
+
+    .contact-bar a:hover {
+      color: var(--gold);
+      text-decoration: underline;
+    }
+
+    /* Sections */
+    section {
+      padding: 4rem 1.5rem;
+    }
+
+    section:nth-of-type(even) {
+      background: #EFECE6;
+    }
+
+    .section-header {
+      margin-bottom: 2.25rem;
+    }
+
+    .section-header h2 {
+      font-size: clamp(1.75rem, 3vw, 2.35rem);
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      max-width: 760px;
+    }
+
+    /* KPI Grid */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .kpi-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--rust);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s, opacity 0.25s;
+    }
+
+    .kpi-card.gold-top {
+      border-top-color: var(--gold);
+    }
+
+    .kpi-number {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--rust);
+      line-height: 1.1;
+      margin-bottom: 0.4rem;
+    }
+
+    .kpi-card.gold-top .kpi-number {
+      color: var(--navy);
+    }
+
+    .kpi-title {
+      font-weight: 700;
+      font-size: 0.98rem;
+      margin-bottom: 0.25rem;
+      color: var(--navy);
+    }
+
+    .kpi-sub {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* 3-Column Cards */
+    .three-col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.75rem;
+      box-shadow: var(--shadow);
+      transition: all 0.25s;
+    }
+
+    .card-dark {
+      background: var(--navy);
+      color: #fff;
+      border-color: var(--navy);
+    }
+
+    .card-number {
+      display: inline-block;
+      background: var(--rust);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      letter-spacing: 0.06em;
+    }
+
+    .card-dark .card-number {
+      background: rgba(217, 155, 38, 0.2);
+      color: var(--gold);
+    }
+
+    .card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.65rem;
+      color: var(--navy);
+    }
+
+    .card-dark h3 {
+      color: #fff;
+    }
+
+    .card p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+
+    .card-dark p {
+      color: #CBD5E1;
+    }
+
+    /* Case Studies Tabs */
+    .tabs-header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .tab-btn {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 0.75rem 1.2rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      color: var(--text-main);
+      transition: all 0.2s;
+    }
+
+    .tab-btn.active {
+      background: var(--navy);
+      color: #fff;
+      border-color: var(--navy);
+    }
+
+    .case-panel {
+      display: none;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .case-panel.active {
+      display: block;
+    }
+
+    .case-meta {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--rust);
+      margin-bottom: 0.35rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .case-panel h3 {
+      font-size: 1.6rem;
+      color: var(--navy);
+      margin-bottom: 1.25rem;
+    }
+
+    .case-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .case-box {
+      background: var(--cream);
+      padding: 1.25rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--rust);
+    }
+
+    .case-box.highlight {
+      background: var(--navy);
+      color: #fff;
+      border-left-color: var(--gold);
+    }
+
+    .case-box h4 {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.65rem;
+      color: var(--navy);
+    }
+
+    .case-box.highlight h4 {
+      color: var(--gold);
+    }
+
+    .case-box ul {
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+
+    .case-box li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Tech Stack */
+    .stack-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .stack-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--navy);
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+
+    .stack-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.85rem;
+      color: var(--navy);
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+
+    .tag {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      padding: 0.3rem 0.65rem;
+      border-radius: 4px;
+      font-size: 0.82rem;
+      font-weight: 500;
+    }
+
+    /* Timeline & 90 Days */
+    .timeline {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .timeline-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--rust);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .timeline-date {
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--rust);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .timeline-content h4 {
+      font-size: 1.05rem;
+      color: var(--navy);
+      margin-bottom: 0.25rem;
+    }
+
+    .timeline-content p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .timeline-item {
+      cursor: pointer;
+      transition: border-color 0.2s ease;
+    }
+
+    .timeline-item:focus-visible {
+      outline: 2px solid var(--rust);
+      outline-offset: 2px;
+    }
+
+    .timeline-item.open {
+      border-left-color: var(--navy);
+    }
+
+    .timeline-toggle {
+      margin-top: 0.5rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0;
+      text-transform: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: color 0.15s ease;
+    }
+
+    .timeline-toggle .chev { font-weight: 600; font-size: 0.9em; }
+
+    .timeline-toggle:hover,
+    .timeline-item:focus-visible .timeline-toggle {
+      color: var(--rust);
+      text-decoration: underline;
+    }
+
+    .timeline-details {
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px dashed var(--border);
+    }
+
+    .timeline-details .jd-lead {
+      margin: 0 0 0.6rem;
+      font-size: 0.88rem;
+      line-height: 1.55;
+      color: var(--text-muted);
+    }
+
+    .timeline-details ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.45rem;
+    }
+
+    .timeline-details li {
+      position: relative;
+      padding-left: 1.05rem;
+      font-size: 0.88rem;
+      line-height: 1.5;
+      color: var(--text-muted);
+    }
+
+    .timeline-details li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.5em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--rust);
+    }
+
+    /* Dimmed state when filtering */
+    .dimmed {
+      opacity: 0.28;
+      transform: scale(0.98);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--navy);
+      color: #fff;
+      padding: 3.5rem 1.5rem;
+      text-align: center;
+      border-top: 4px solid var(--gold);
+    }
+
+    footer h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    footer p {
+      color: #CBD5E1;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-primary {
+      background: var(--rust);
+      color: #fff;
+      padding: 0.7rem 1.4rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: opacity 0.2s;
+    }
+
+    .btn-primary:hover {
+      opacity: 0.9;
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: #fff;
+      padding: 0.7rem 1.4rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 0.35rem;
+      }
+
+      /* Case study tabs: stay pinned while scrolling a panel */
+      .tabs-header {
+        position: sticky;
+        top: 95px;
+        z-index: 50;
+        background: rgba(247, 245, 240, 0.97);
+        backdrop-filter: blur(8px);
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 0.6rem 0.25rem;
+        margin-bottom: 1rem;
+        scrollbar-width: none;
+      }
+
+      .tabs-header::-webkit-scrollbar {
+        display: none;
+      }
+
+      .tab-btn {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        padding: 0.55rem 0.95rem;
+        font-size: 0.85rem;
+      }
+
+      .case-panel {
+        scroll-margin-top: 165px;
+      }
+
+      /* Nav: one compact scrollable row of links instead of wrapping */
+      .nav-container {
+        flex-wrap: nowrap;
+      }
+
+      .nav-links {
+        flex: 1 1 auto;
+        min-width: 0;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        justify-content: flex-start;
+      }
+
+      .nav-links::-webkit-scrollbar {
+        display: none;
+      }
+
+      .nav-links a {
+        flex: 0 0 auto;
+        white-space: nowrap;
+      }
+
+      /* Anchor jumps land below the two-row mobile nav */
+      section {
+        scroll-margin-top: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="brand">CLARISSA WARD <span>| PORTFOLIO</span></div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#impact">Impact</a>
+        <a href="#philosophy">Philosophy</a>
+        <a href="#pillars">Pillars</a>
+        <a href="#cases">Case Studies</a>
+        <a href="#stack">Tech Stack</a>
+        <a href="#plan">First 90 Days</a>
+      </div>
+      <a class="nav-resume" href="Clarissa-Ward-Resume.pdf" download>Download Resume</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <span class="eyebrow">Executive Operations & Logistics Portfolio</span>
+      <h1>CLARISSA WARD</h1>
+      <div class="hero-subtitle">Operations, Logistics &amp; Executive Support Leadership</div>
+      <p class="hero-tagline">Turning complex, high-volume chaos into scalable, repeatable systems.</p>
+      <div class="contact-bar">
+        <span>📍 San Francisco Bay Area, CA</span>
+        <a href="tel:9254574360">📞 (925) 457-4360</a>
+        <a href="mailto:clarissa.d.ward@gmail.com">✉️ clarissa.d.ward@gmail.com</a>
+        <a href="https://linkedin.com/in/clarissadward" target="_blank" rel="noopener">🔗 linkedin.com/in/clarissadward</a>
+      </div>
+    </div>
+  </header>
+
+      <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>15+ Years of Progress</h2>
+        <p>Fifteen years across five industries running the same core systems: high-volume dispatch and route scheduling, vendor and rate management, DOT compliance, SOP and training program development, and data reporting for VP-level leadership. Each transition meant mapping a new operation's workflows, identifying bottlenecks, standardizing the processes, and holding delivery performance steady while the team adapted.</p>
+      </div>
+      <div class="case-grid">
+        <div class="case-box">
+          <h4>Proven Across Five Industries</h4>
+          <p>Since 2011 the work has moved across five industries: healthcare supply chain at Kaiser Permanente, 24/7 grocery distribution at Safeway, heavy civil construction dispatch at Goodfellow Bros., equipment rental at H&amp;E Equipment Services, and today a multi-store retail delivery network at Sherwin-Williams. Each move meant learning a new operation, new vendors, and a new rules book, and each time the same skills transferred: dispatch and routing, vendor and cost control, SOP and training systems, and leading teams through change without losing delivery performance.</p>
+        </div>
+        <div class="case-box highlight">
+          <h4>What That Range Means for You</h4>
+          <ul>
+            <li><strong>Ready for bigger scope:</strong> Running an 18-store, 5-terminal region today means a larger region or a full distribution network is a step up in scale, not a change in skill.</li>
+            <li><strong>Enterprise logistics is daily work:</strong> Routing design, vendor rate negotiation, DOT compliance, and KPI reporting are already routine, ready to scale to whatever the operation needs.</li>
+            <li><strong>Leadership bench strength:</strong> VP-level strategic reporting, calendar triage, event execution, and discreet handling of confidential matters make me a dependable partner to senior leadership from day one.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- By The Numbers -->
+  <section id="impact">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Proven Results</span>
+        <h2>By the Numbers: High-Volume Impact at Scale</h2>
+        <p>15+ year track record across logistics, heavy civil construction, distribution, and healthcare operations.</p>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi-card filterable" data-tracks="logistics process">
+          <div class="kpi-number">$13.9M</div>
+          <div class="kpi-title">Annual Delivered Sales Managed</div>
+          <div class="kpi-sub">Sherwin-Williams South Bay Market</div>
+        </div>
+        <div class="kpi-card filterable" data-tracks="logistics process">
+          <div class="kpi-number">4,000+</div>
+          <div class="kpi-title">Annual Heavy Equipment Moves</div>
+          <div class="kpi-sub">Goodfellow Bros. across 50+ active job sites</div>
+        </div>
+        <div class="kpi-card gold-top filterable" data-tracks="logistics process">
+          <div class="kpi-number">+10%</div>
+          <div class="kpi-title">Increase in On-Time Delivery</div>
+          <div class="kpi-sub">Driven by regional data &amp; utilization analysis</div>
+        </div>
+        <div class="kpi-card gold-top filterable" data-tracks="logistics process abp">
+          <div class="kpi-number">+20%</div>
+          <div class="kpi-title">Approved Headcount Expansion</div>
+          <div class="kpi-sub">Earned by cutting turnover &amp; proving efficiency</div>
+        </div>
+        <div class="kpi-card filterable" data-tracks="logistics abp">
+          <div class="kpi-number">18 Stores</div>
+          <div class="kpi-title">&amp; 5 Commercial Terminals</div>
+          <div class="kpi-sub">Multi-site regional footprint led with 18 direct reports</div>
+        </div>
+        <div class="kpi-card gold-top filterable" data-tracks="logistics process abp">
+          <div class="kpi-number">400+</div>
+          <div class="kpi-title">Drivers Scheduled Around the Clock</div>
+          <div class="kpi-sub">24/7 grocery distribution operations at Safeway</div>
+        </div>
+        <div class="kpi-card filterable" data-tracks="logistics process">
+          <div class="kpi-number">21,600</div>
+          <div class="kpi-title">Deliveries Coordinated Per Year</div>
+          <div class="kpi-sub">Annual volume across the Sherwin-Williams South Bay network</div>
+        </div>
+        <div class="kpi-card filterable" data-tracks="logistics process abp">
+          <div class="kpi-number">5</div>
+          <div class="kpi-title">Industries Worked End to End</div>
+          <div class="kpi-sub">Construction, warehouse distribution, paint delivery, equipment rental &amp; healthcare logistics</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Operational Philosophy -->
+  <section id="philosophy">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">The Operational Philosophy</span>
+        <h2>Fix the System, Empower the Team</h2>
+      </div>
+      <div class="three-col">
+        <div class="card">
+          <span class="card-number">01</span>
+          <h3>See the Problem a Week Out</h3>
+          <p>Anticipate bottlenecks before they impact the floor or the executive calendar. Transition teams from reactive firefighting to proactive scheduling.</p>
+        </div>
+        <div class="card">
+          <span class="card-number">02</span>
+          <h3>Build the Repeatable System</h3>
+          <p>Turn one-off fixes into durable infrastructure. Author first-ever SOPs, build live KPI trackers, and design training manuals that hold up as the organization scales.</p>
+        </div>
+        <div class="card">
+          <span class="card-number">03</span>
+          <h3>Lead with a People-First Mindset</h3>
+          <p>"Builds teams that stay." Pair strict accountability and safety compliance with clear career paths, hands-on coaching, and cross-departmental appreciation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Three Core Pillars -->
+  <section id="pillars">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Core Capabilities &amp; Target Tracks</span>
+        <h2>Three Core Pillars of Leadership</h2>
+        <p>Built to slot seamlessly into three high-impact operational tracks from day one.</p>
+      </div>
+      <div class="three-col">
+        <div class="card card-dark filterable" data-tracks="logistics">
+          <span class="card-number">PILLAR 01</span>
+          <h3>Multi-Site Fleet &amp; Logistics Operations</h3>
+          <p>Outbound delivery, heavy haul dispatch, DOT/FMCSA compliance, 3PL carrier negotiation, warehouse throughput, and multi-terminal routing P&amp;Ls.</p>
+        </div>
+        <div class="card card-dark filterable" data-tracks="process">
+          <span class="card-number">PILLAR 02</span>
+          <h3>Process Improvement, Procurement &amp; Analytics</h3>
+          <p>SOP authorship, Oracle/SAP expense &amp; purchasing controls, root-cause analysis, and live KPI dashboards in Tableau and Advanced Excel/Sheets.</p>
+        </div>
+        <div class="card card-dark filterable" data-tracks="abp">
+          <span class="card-number">PILLAR 03</span>
+          <h3>Executive Partnership &amp; Organizational Ops</h3>
+          <p>VP/DM strategic reporting, complex calendar triage, end-to-end offsite and event planning, and discreet handling of confidential HR and incident matters.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies -->
+  <section id="cases">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Execution in Action</span>
+        <h2>Operational Case Studies &amp; Functional Highlights</h2>
+      </div>
+
+      <div class="tabs-header">
+        <button class="tab-btn active" onclick="openCase('sw', this)">Sherwin-Williams</button>
+        <button class="tab-btn" onclick="openCase('dline', this)">D-Line Constructors</button>
+        <button class="tab-btn" onclick="openCase('gb', this)">Goodfellow Bros.</button>
+        <button class="tab-btn" onclick="openCase('he', this)">H&amp;E Equipment</button>
+        <button class="tab-btn" onclick="openCase('sops', this)">SOPs &amp; Playbooks</button>
+        <button class="tab-btn" onclick="openCase('proc', this)">Procurement &amp; Finance</button>
+        <button class="tab-btn" onclick="openCase('exec', this)">Executive Support &amp; Events</button>
+      </div>
+
+      <!-- Sherwin-Williams -->
+      <div id="case-sw" class="case-panel active">
+        <div class="case-meta">Regional Driver Supervisor • Apr 2024 – Present | San Jose &amp; Cal Bay Region</div>
+        <h3>Regional Fleet Turnaround at Sherwin-Williams</h3>
+        <div class="case-grid">
+          <div class="case-box">
+            <h4>The Challenge &amp; Fix</h4>
+            <ul>
+              <li><strong>Scope:</strong> 18 high-volume retail stores, 5 commercial terminals, and 18 direct reports managing $13.9M in annual delivered sales across roughly 21,600 deliveries a year.</li>
+              <li><strong>Data-Driven Routing:</strong> Analyzed regional delivery data to rebalance daily routes, tighten asset utilization, and eliminate wasted mileage.</li>
+              <li><strong>Structured Coaching:</strong> Conducted ride-alongs and built individual development plans (IDPs) for clear driver career paths.</li>
+              <li><strong>Executive Alignment:</strong> Led monthly strategic reviews with VPs and District Managers with custom PowerPoint decks.</li>
+            </ul>
+          </div>
+          <div class="case-box highlight">
+            <h4>Measured Results</h4>
+            <ul>
+              <li><strong>+10% On-Time Delivery</strong> across the South Bay market.</li>
+              <li><strong>+20% Headcount Expansion Approved</strong> by leadership after proving efficiency gains and reducing turnover.</li>
+              <li><strong>Expanded regional coverage area</strong> without adding initial overhead.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- D-Line Constructors -->
+      <div id="case-dline" class="case-panel">
+        <div class="case-meta">Resource Manager • Sep 2022 – Feb 2023</div>
+        <h3>Process Assessment &amp; SOP Authoring at D-Line Constructors</h3>
+        <div class="case-grid">
+          <div class="case-box">
+            <h4>Process &amp; Workflow Assessment</h4>
+            <ul>
+              <li><strong>Full Operational Evaluations:</strong> Conducted thorough assessments across field and office workflows.</li>
+              <li><strong>Bottleneck Identification:</strong> Surfaced friction in resource allocation, scheduling handoffs, and project tracking.</li>
+            </ul>
+          </div>
+          <div class="case-box highlight">
+            <h4>Standardization &amp; Controls</h4>
+            <ul>
+              <li><strong>SOP Authoring:</strong> Wrote and implemented comprehensive standard operating procedures from scratch to standardize operations.</li>
+              <li><strong>Cross-Team Alignment:</strong> Streamlined communication protocols between project managers, field crews, and administrative support.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Goodfellow Bros. -->
+      <div id="case-gb" class="case-panel">
+        <div class="case-meta">Dispatcher (2017–2020) &amp; Construction Dispatch Manager (2020–2022) | Livermore, CA</div>
+        <h3>Heavy Civil Dispatch Leadership at Goodfellow Bros.</h3>
+        <div class="case-grid">
+          <div class="case-box">
+            <h4>The Scope</h4>
+            <ul>
+              <li><strong>High-Stakes Logistics:</strong> Directed heavy equipment and material logistics across 50+ active construction job sites.</li>
+              <li><strong>Mixed Fleet Coordination:</strong> Coordinated internal fleet drivers alongside outside 3PL and heavy-haul carriers.</li>
+              <li><strong>Working-Manager Promotion:</strong> Promoted in 2020 to lead a team of 5 dispatchers.</li>
+            </ul>
+          </div>
+          <div class="case-box highlight">
+            <h4>Key Execution &amp; Controls</h4>
+            <ul>
+              <li><strong>4,000+ Annual Moves:</strong> Full lifecycle management from field request and permitting to dispatch, delivery, recovery, and cost reconciliation.</li>
+              <li><strong>Custom Tracking Systems:</strong> Built live tracking sheets and dispatch boards from scratch for Project Managers, Superintendents, and VPs.</li>
+              <li><strong>Team Leadership (2020–2022):</strong> Promoted to a working manager over a team of 5 dispatchers, owning people management and dispute resolution while staying hands-on in the daily dispatch seat.</li>
+              <li><strong>Vendor Rates &amp; Invoice Control:</strong> Negotiated annual rates with third-party trucking and crane vendors against strict SLAs, and paid invoices on schedule to protect the company's credit rating.</li>
+              <li><strong>Modernized Through COVID:</strong> Carried the department through the pandemic as a new manager, modernizing their processes so dispatch kept moving across 50+ sites.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- H&E Equipment -->
+      <div id="case-he" class="case-panel">
+        <div class="case-meta">Inside Sales Rep / Operations Support • Mar 2023 – Apr 2024 | Lodi, CA</div>
+        <h3>Workflow Redesign at H&amp;E Equipment Services</h3>
+        <div class="case-grid">
+          <div class="case-box">
+            <h4>Central Operational Hub</h4>
+            <ul>
+              <li><strong>Cross-Functional Connector:</strong> Linked District Outside Sales Reps (OSRs), branch managers, service mechanics, and commercial clients across Northern California.</li>
+              <li><strong>Regional Coverage:</strong> Served as the communication hub keeping every group in step across the district.</li>
+            </ul>
+          </div>
+          <div class="case-box highlight">
+            <h4>Measured Impact</h4>
+            <ul>
+              <li><strong>Multi-Team Calendar Cohesion:</strong> Managed overlapping schedules and equipment availability so commercial projects hit mobilization dates.</li>
+              <li><strong>Quality Control Audits:</strong> Caught billing, contract, and scheduling errors upstream before impacting revenue.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- SOPs -->
+      <div id="case-sops" class="case-panel">
+        <div class="case-meta">Operational Backbone &amp; Change Management</div>
+        <h3>Building from Zero: SOPs &amp; Playbooks</h3>
+        <div class="case-grid">
+          <div class="case-box">
+            <h4>Goodfellow Bros. &mdash; Modernized Through COVID</h4>
+            <ul>
+              <li><strong>Working-Manager Promotion:</strong> Promoted to manager in 2020 over a team of 5 dispatchers.</li>
+              <li><strong>COVID Continuity:</strong> Carried the dispatch department through the pandemic without losing momentum across 50+ sites.</li>
+              <li><strong>Process Modernization:</strong> Digital tracking, communication cadences, and accountability standards replaced tribal knowledge.</li>
+            </ul>
+          </div>
+          <div class="case-box highlight">
+            <h4>Playbooks &amp; Training Systems</h4>
+            <ul>
+              <li><strong>Repeatable Training Playbooks:</strong> Replaced shadowing and tribal knowledge with step-by-step manuals covering safety, software, and service standards.</li>
+              <li><strong>SOP Authorship:</strong> Wrote and implemented standard operating procedures from scratch, standardizing operations across departments.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Procurement -->
+      <div id="case-proc" class="case-panel">
+        <div class="case-meta">Purchasing &amp; Cost Control</div>
+        <h3>Procurement, Vendor Management &amp; Financial Controls</h3>
+        <div class="case-grid">
+          <div class="case-box">
+            <h4>Vendor &amp; Budget Ownership</h4>
+            <ul>
+              <li><strong>End-to-End Vendor Lifecycle:</strong> Sourcing, RFP/quote comparison, rate negotiation, COI/compliance verification, and SLA tracking.</li>
+              <li><strong>Budget &amp; P&amp;L Ownership:</strong> Direct management of regional labor, overtime, fleet maintenance, and fuel budgets.</li>
+            </ul>
+          </div>
+          <div class="case-box highlight">
+            <h4>ERP &amp; Expense Governance</h4>
+            <ul>
+              <li><strong>ERP Execution:</strong> Hands-on work in <strong>Oracle Cloud ERP</strong> and <strong>SAP/Concur</strong> for purchase requisitions, PO tracking, and invoice reconciliation.</li>
+              <li><strong>Expense Auditing:</strong> Corporate expense auditing and purchasing governance kept spend accountable.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Executive Support -->
+      <div id="case-exec" class="case-panel">
+        <div class="case-meta">Trusted Partner to VPs, District Managers &amp; HR</div>
+        <h3>Executive Partnership, Events &amp; Discreet Leadership Support</h3>
+        <div class="case-grid">
+          <div class="case-box">
+            <h4>Executive Briefings &amp; Offsites</h4>
+            <ul>
+              <li><strong>Strategy Decks:</strong> Translates raw floor and regional data into decision-ready PowerPoint decks for monthly VP and District Manager reviews.</li>
+              <li><strong>End-to-End Event Planning:</strong> Plans cross-departmental team-building events, safety rodeos, and driver appreciation offsites—managing budgets, venues, vendors, and sponsorships.</li>
+            </ul>
+          </div>
+          <div class="case-box highlight">
+            <h4>High-Discretion HR &amp; Incident Management</h4>
+            <ul>
+              <li><strong>Trusted Point of Contact:</strong> Handled sensitive operational matters alongside HR and legal.</li>
+              <li><strong>Incident &amp; Corrective Work:</strong> DOT accident investigations, root-cause documentation, corrective action plans, and promotion-readiness reviews.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section id="stack">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Systems &amp; Platforms</span>
+        <h2>Technical Stack &amp; Operational Toolbelt</h2>
+      </div>
+      <div class="stack-grid">
+        <div class="stack-card">
+          <h3>Data, BI &amp; Reporting</h3>
+          <div class="tag-list">
+            <span class="tag">Advanced Excel (Pivots, XLOOKUP)</span>
+            <span class="tag">Google Sheets</span>
+            <span class="tag">Tableau</span>
+            <span class="tag">Custom KPI Dashboards</span>
+          </div>
+        </div>
+        <div class="stack-card">
+          <h3>ERP, Finance &amp; Fleet</h3>
+          <div class="tag-list">
+            <span class="tag">Oracle Cloud ERP</span>
+            <span class="tag">SAP / Concur</span>
+            <span class="tag">HCSS (HeavyJob &amp; Dispatcher)</span>
+          </div>
+        </div>
+        <div class="stack-card">
+          <h3>Project &amp; Collaboration</h3>
+          <div class="tag-list">
+            <span class="tag">Google Workspace</span>
+            <span class="tag">MS Office 365 &amp; Planner</span>
+            <span class="tag">Monday.com</span>
+            <span class="tag">Trello</span>
+            <span class="tag">SharePoint</span>
+            <span class="tag">Slack</span>
+          </div>
+        </div>
+        <div class="stack-card">
+          <h3>Methodologies &amp; Certs</h3>
+          <div class="tag-list">
+            <span class="tag">Pathstream Business Analytics &amp; Ops (2026)</span>
+            <span class="tag">Root-Cause Analysis</span>
+            <span class="tag">DOT / FMCSA Compliance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Timeline & First 90 Days -->
+  <section id="plan">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Onboarding &amp; Execution</span>
+        <h2>The First 90 Days: Hitting the Ground Running</h2>
+      </div>
+      <div class="three-col" style="margin-bottom: 3.5rem;">
+        <div class="card">
+          <span class="card-number">DAYS 1–30</span>
+          <h3>Audit &amp; Listen</h3>
+          <p>Map existing workflows, shadow key team members, audit current trackers/calendars/vendor contracts, and identify the top three friction points slowing the team down.</p>
+        </div>
+        <div class="card">
+          <span class="card-number">DAYS 31–60</span>
+          <h3>Stabilize &amp; Standardize</h3>
+          <p>Implement quick-win fixes, clean up reporting dashboards, document missing SOPs, and establish clear communication cadences between leadership and the floor.</p>
+        </div>
+        <div class="card">
+          <span class="card-number">DAYS 61–90</span>
+          <h3>Optimize &amp; Scale</h3>
+          <p>Use 60 days of baseline data to renegotiate vendor/route inefficiencies, roll out individual development or training plans, and shift leadership's focus from daily fires to quarterly goals.</p>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <span class="eyebrow">15+ Years of Progression</span>
+        <h2>Career Timeline</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2024 – Present</div>
+          <div class="timeline-content">
+            <h4>Sherwin-Williams — Regional Driver Supervisor</h4>
+                        <button class="timeline-toggle" type="button" aria-expanded="false">More details <span class="chev">+</span></button>
+            <div class="timeline-details" hidden>
+              <p class="jd-lead">Managing the South Bay Region for Sherwin-Williams Delivery Drivers, servicing 18 high volume stores and 5 terminals with 18 direct reports. Analyzing department data to optimize daily utilization, cut costs, and create business opportunities.</p>
+              <ul>
+                <li>Increased On Time Delivery percentage by 10% by optimizing utilization based on regional data</li>
+                <li>Reduced turnover within department and increased efficiency resulting in budget approvals to expand department headcount by 20%</li>
+                <li>Conduct coaching visits and ride-alongs focused on training and managing expectations</li>
+                <li>Created individual development plans for each employee to give a clear career path</li>
+                <li>Leads monthly strategic meetings with VPs and District Managers, creating and delivering detailed PowerPoint presentations to address regional needs and outline department goals</li>
+                <li>Design and lead team training programs covering safety, delivery standards, and customer service, bringing employees up to consistent standards</li>
+                <li>Expanded coverage area without increasing headcount</li>
+                <li>Manage delivered sales for the South Bay market, an annual value of $13.9M</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2023 – 2024</div>
+          <div class="timeline-content">
+            <h4>H&amp;E Equipment Services — Inside Sales Rep / Operations Support</h4>
+                        <button class="timeline-toggle" type="button" aria-expanded="false">More details <span class="chev">+</span></button>
+            <div class="timeline-details" hidden>
+              <p class="jd-lead">First line of support for customers, handling quotes, orders, and account issues for heavy earth moving equipment rental and sales.</p>
+              <ul>
+                <li>Prioritized high-value clientele with proactive outreach to protect revenue and grow repeat rental and sales bookings</li>
+                <li>Created and onboarded new customer accounts, processing credit applications and contract paperwork</li>
+                <li>Coordinated and dispatched drivers for equipment deliveries and pick-ups, keeping job sites supplied on schedule</li>
+                <li>Managed branch inventory, tracking rental fleet and sales stock and arranging transfers to fill customer needs</li>
+                <li>Coordinated service calls in the Service Manager's absence</li>
+                <li>Created a data tracking and scheduling system that organized workflows and improved communication across teams</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2022 – 2023</div>
+          <div class="timeline-content">
+            <h4>D-Line Constructors — Resource Manager</h4>
+                        <button class="timeline-toggle" type="button" aria-expanded="false">More details <span class="chev">+</span></button>
+            <div class="timeline-details" hidden>
+              <p class="jd-lead">Successfully served as a liaison between field and office personnel, ensuring effective communication and coordination. Supported VPs, Project Managers, and Engineers to strategize high-level project needs, optimize resources, and successfully minimize job costs.</p>
+              <ul>
+                <li>Created training manuals to simplify departmental training and ensuring comprehensive coverage</li>
+                <li>Created and implemented Standardized Operating Procedures across multiple departments improving efficiency and consistency</li>
+                <li>Managed calendars for multiple teams to ensure cohesion across projects</li>
+                <li>Optimized high-level resources to minimize job costs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2020 – 2022</div>
+          <div class="timeline-content">
+            <h4>Goodfellow Bros. — Construction Dispatch Manager</h4>
+                        <button class="timeline-toggle" type="button" aria-expanded="false">More details <span class="chev">+</span></button>
+            <div class="timeline-details" hidden>
+              <p class="jd-lead">Promoted in 2020 to a working manager leading a team of five dispatchers supporting 50+ active jobs at a time. Worked directly with Engineers, Project Managers, and VPs, modernized department processes, and carried the team through COVID.</p>
+              <ul>
+                <li>Created schedules for individual jobs and ensured on-time completion of projects</li>
+                <li>Reviewed and finalized daily reporting presented to multiple departments and management</li>
+                <li>Negotiated lower annual rates with multiple vendors to create additional room in budget for emergency needs</li>
+                <li>Partnered directly with field personnel to anticipate daily needs, procure materials, and prevent last minute requests</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2017 – 2020</div>
+          <div class="timeline-content">
+            <h4>Goodfellow Bros. — Dispatcher</h4>
+                        <button class="timeline-toggle" type="button" aria-expanded="false">More details <span class="chev">+</span></button>
+            <div class="timeline-details" hidden>
+              <p class="jd-lead">Joined Goodfellow Bros as a dispatcher after nearly a decade in dispatch and logistics, coordinating heavy civil construction material and equipment movements.</p>
+              <ul>
+                <li>High volume complex scheduling managing over 4,000 equipment moves annually</li>
+                <li>Created schedules for individual jobs and ensured on-time completion of projects</li>
+                <li>Partnered directly with field personnel to anticipate daily needs, procure materials, and prevent last minute requests</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2015 – 2017</div>
+          <div class="timeline-content">
+            <h4>Safeway Inc. — Dispatcher / Operations Support</h4>
+                        <button class="timeline-toggle" type="button" aria-expanded="false">More details <span class="chev">+</span></button>
+            <div class="timeline-details" hidden>
+              <p class="jd-lead">Managed high volume daily scheduling and personnel workloads for 400+ employees. Monitored department performance and provided reports directly to VP of Transportation. Served as a communication link between drivers, stores, and vendors.</p>
+              <ul>
+                <li>Created tracker for deliveries needing multi-day follow up</li>
+                <li>Sole contact for any promotional rollouts to ensure each store received all necessary marketing materials</li>
+                <li>Coordinated internal projects between multiple departments</li>
+                <li>Collaborated with Corporate Traffic to improve route optimization</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2011 – 2015</div>
+          <div class="timeline-content">
+            <h4>Kaiser Permanente — Sr. Logistics Coordinator</h4>
+                        <button class="timeline-toggle" type="button" aria-expanded="false">More details <span class="chev">+</span></button>
+            <div class="timeline-details" hidden>
+              <p class="jd-lead">Set priority for requests from multiple departments. Generated detailed data tracking spreadsheets in MS Excel and pulled comprehensive operational reports directly for upper management.</p>
+              <ul>
+                <li>Sole point of contact for large-scale projects</li>
+                <li>Tracked multi-step projects and provided reports to VPs</li>
+                <li>Created department expectations and implemented coaching standards across team to manage department inefficiencies</li>
+                <li>Managed calendar for drivers and 3rd party couriers to keep track of internal deliveries</li>
+                <li>Created user-friendly database to simplify training for new employees</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <h2>Let's Build Systems That Scale.</h2>
+      <p>Target Roles: Operations Manager • Logistics &amp; Transportation Manager • Procurement Operations • Administrative Business Partner</p>
+      <div class="footer-links">
+                  <a class="btn-primary" href="mailto:clarissa.d.ward@gmail.com">Email Clarissa</a>
+        <a class="btn-outline" href="tel:9254574360">(925) 457-4360</a>
+        <a class="btn-outline" href="https://linkedin.com/in/clarissadward" target="_blank" rel="noopener">LinkedIn Profile</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function openCase(id, btn) {
+      document.querySelectorAll('.case-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('case-' + id).classList.add('active');
+      btn.classList.add('active');
+      if (window.innerWidth <= 700) {
+        btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        document.getElementById('case-' + id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+  </script>
+  <script>
+    (function () {
+      document.querySelectorAll('.timeline-item').forEach(function (item) {
+        var btn = item.querySelector('.timeline-toggle');
+        var panel = item.querySelector('.timeline-details');
+        if (!btn || !panel) return;
+        item.setAttribute('tabindex', '0');
+        function setOpen(open) {
+          panel.hidden = !open;
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          var chev = btn.querySelector('.chev');
+          if (chev) chev.textContent = open ? '\u2212' : '+';
+          item.classList.toggle('open', open);
+        }
+        function toggle() {
+          if (window.getSelection && String(window.getSelection()).length) return;
+          setOpen(panel.hidden);
+        }
+        item.addEventListener('click', toggle);
+        item.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
