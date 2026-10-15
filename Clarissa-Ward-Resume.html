@@ -94,47 +94,6 @@
       transform: translateY(-1px);
     }
 
-    /* Mobile: let the floating bar breathe */
-    @media (max-width: 700px) {
-      body {
-        padding: 120px 14px 40px;
-      }
-
-      .action-bar {
-        flex-wrap: wrap;
-        padding: 10px 14px 12px;
-        gap: 8px;
-      }
-
-      .action-bar-title {
-        flex: 1 1 100%;
-        font-size: 0.92rem;
-      }
-
-      .btn-print {
-        margin-left: auto;
-        padding: 8px 14px;
-        font-size: 0.85rem;
-      }
-
-      /* Stats wrap to a 2x2 grid so nothing runs off the right edge */
-      .metrics-bar {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 12px 22px;
-        gap: 10px 16px;
-      }
-
-      .metric-value {
-        font-size: 11pt;
-      }
-
-      .pillars-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .bottom-grid {
-        grid-template-columns: 1fr;
-      }
     }
 
     /* Resume Page Container */
@@ -443,6 +402,47 @@
         border-radius: 0;
       }
     }
+    /* Mobile: let the floating bar breathe */
+    @media (max-width: 700px) {
+      body {
+        padding: 120px 14px 40px;
+      }
+
+      .action-bar {
+        flex-wrap: wrap;
+        padding: 10px 14px 12px;
+        gap: 8px;
+      }
+
+      .action-bar-title {
+        flex: 1 1 100%;
+        font-size: 0.92rem;
+      }
+
+      .btn-print {
+        margin-left: auto;
+        padding: 8px 14px;
+        font-size: 0.85rem;
+      }
+
+      /* Stats wrap to a 2x2 grid so nothing runs off the right edge */
+      .metrics-bar {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 12px 22px;
+        gap: 10px 16px;
+      }
+
+      .metric-value {
+        font-size: 11pt;
+      }
+
+      .pillars-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .bottom-grid {
+        grid-template-columns: 1fr;
+      }
   </style>
 </head>
 <body>
