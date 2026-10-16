@@ -75,12 +75,6 @@
       border-radius: 999px;
     }
 
-    a.btn-download {
-      text-decoration: none;
-      display: inline-block;
-      margin-left: 8px;
-    }
-
     .btn-print {
       margin-left: auto;
       background: var(--gold-accent);
@@ -460,7 +454,7 @@
     </div>
     <span class="badge">clarissadward.com theme</span>
     <button class="btn-print" onclick="window.print()">Save as PDF / Print</button>
-    <a class="btn-print btn-download" href="Clarissa-Ward-Resume.pdf" download>Download PDF</a>
+    
   </div>
 
   <main class="resume-sheet">
@@ -643,6 +637,29 @@
     </div>
   </main>
 
-<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5b971ac2d513477e9c3c6291bf415987"}'></script><!-- End Cloudflare Web Analytics -->
+  <script>
+  (function () {
+    var VIRTUAL = '/resume-print-click';
+    function restore() {
+      if (location.pathname === VIRTUAL) {
+        try { history.replaceState(null, '', '/Clarissa-Ward-Resume.html'); } catch (e) {}
+      }
+    }
+    document.querySelector('.btn-print').addEventListener('click', function () {
+      try {
+        history.pushState(null, '', VIRTUAL);
+        var s = document.createElement('script');
+        s.type = 'module';
+        s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+        s.setAttribute('data-cf-beacon', '{"token": "5b971ac2d513477e9c3c6291bf415987", "spa": false, "load": "multi"}');
+        document.body.appendChild(s);
+      } catch (e) {}
+      setTimeout(restore, 8000);
+    });
+    window.addEventListener('afterprint', function () { setTimeout(restore, 2500); });
+  })();
+  </script>
+
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5b971ac2d513477e9c3c6291bf415987", "spa": false, "load": "multi"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
