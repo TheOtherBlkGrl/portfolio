@@ -650,7 +650,7 @@
         history.pushState(null, '', VIRTUAL);
         var s = document.createElement('script');
         s.type = 'module';
-        s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+        s.src = 'https://static.cloudflareinsights.com/beacon.min.js?click=' + Date.now();
         s.setAttribute('data-cf-beacon', '{"token": "5b971ac2d513477e9c3c6291bf415987", "spa": false, "load": "multi"}');
         document.body.appendChild(s);
       } catch (e) {}
