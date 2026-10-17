@@ -451,6 +451,12 @@
     /* Contact block stays right-aligned, even when it wraps below the name */
     .contact-grid {
       margin-left: auto;
+      flex-shrink: 0;
+    }
+
+    /* Let the name/headline block shrink so the contact block stays on the same row, top-aligned */
+    .header-top > div:first-child {
+      min-width: 0;
     }
 
     /* Variant switcher (floating bar only; never printed) */
