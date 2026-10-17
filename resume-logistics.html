@@ -462,7 +462,7 @@
     }
 
     /* Back-to-site button (floating bar only; never printed) */
-    .btn-back {
+    .action-bar a.btn-back {
       color: #e2e8f0;
       text-decoration: none;
       font-family: 'Outfit', sans-serif;
@@ -474,9 +474,13 @@
       white-space: nowrap;
     }
 
-    .btn-back:hover {
+    .action-bar a.btn-back:hover {
       color: var(--gold-accent);
       border-color: var(--gold-accent);
+    }
+
+    .btn-back .back-short {
+      display: none;
     }
 
     /* Variant switcher (floating bar only; never printed) */
@@ -511,12 +515,6 @@
     }
 
     @media (max-width: 700px) {
-      .btn-back {
-        flex: 1 1 100%;
-        text-align: center;
-        order: 4;
-      }
-
       .variant-links {
         flex: 1 1 100%;
         margin-left: 0;
@@ -527,7 +525,7 @@
     /* Compact mobile action bar: one slim row (title + buttons), pills swipe below */
     @media (max-width: 700px) {
       body {
-        padding: 104px 14px 40px;
+        padding: 96px 14px 40px;
       }
 
       .action-bar {
@@ -551,10 +549,18 @@
         flex: 0 0 auto;
       }
 
-      .btn-back {
-        flex: 0 0 auto;
-        padding: 7px 12px;
-        font-size: 0.78rem;
+      .action-bar a.btn-back {
+        order: -1;
+        padding: 4px 10px;
+        font-size: 0.75rem;
+      }
+
+      .btn-back .back-long {
+        display: none;
+      }
+
+      .btn-back .back-short {
+        display: inline;
       }
 
       .variant-links {
@@ -591,8 +597,8 @@
       <a href="resume-dispatch.html">Dispatch</a>
       <a href="resume-executive-assistant.html">EA / Admin</a>
       <a href="resume-logistics.html" class="current">Logistics</a>
+      <a class="btn-back" href="https://clarissadward.com"><span class="back-long">&larr; Back to clarissadward.com</span><span class="back-short">&larr; Back to site</span></a>
     </nav>
-    <a class="btn-back" href="https://clarissadward.com">&larr; Back to clarissadward.com</a>
     <button class="btn-print" onclick="window.print()">Save as PDF / Print</button>
 
   </div>
