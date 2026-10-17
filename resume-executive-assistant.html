@@ -454,8 +454,10 @@
       flex-shrink: 0;
     }
 
-    /* Let the name/headline block shrink so the contact block stays on the same row, top-aligned */
+    /* Give the name/headline block a small flex basis so it wraps earlier and the
+       contact block stays on the same row, top-aligned, instead of wrapping below */
     .header-top > div:first-child {
+      flex: 1 1 340px;
       min-width: 0;
     }
 
