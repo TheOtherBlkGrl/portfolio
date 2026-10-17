@@ -461,6 +461,24 @@
       min-width: 0;
     }
 
+    /* Back-to-site button (floating bar only; never printed) */
+    .btn-back {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: 0.85rem;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      padding: 7px 14px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+
+    .btn-back:hover {
+      color: var(--gold-accent);
+      border-color: var(--gold-accent);
+    }
+
     /* Variant switcher (floating bar only; never printed) */
     .variant-links {
       display: flex;
@@ -493,6 +511,12 @@
     }
 
     @media (max-width: 700px) {
+      .btn-back {
+        flex: 1 1 100%;
+        text-align: center;
+        order: 4;
+      }
+
       .variant-links {
         flex: 1 1 100%;
         margin-left: 0;
@@ -514,6 +538,7 @@
       <a href="resume-executive-assistant.html" class="current">EA / Admin</a>
       <a href="resume-logistics.html">Logistics</a>
     </nav>
+    <a class="btn-back" href="https://clarissadward.com">&larr; Back to clarissadward.com</a>
     <button class="btn-print" onclick="window.print()">Save as PDF / Print</button>
 
   </div>
