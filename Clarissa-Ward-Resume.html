@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clarissa D. Ward | Executive Operations & Fleet Logistics Resume</title>
+  <title>Clarissa D. Ward | Operations Leadership Resume</title>
   <!-- Google Fonts matching clarissadward.com -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
-  
+
   <style>
     :root {
       --navy-dark: #0f172a;
@@ -443,18 +443,63 @@
       .bottom-grid {
         grid-template-columns: 1fr;
       }
-  </style>
+  
+    /* Variant switcher (floating bar only; never printed) */
+    .variant-links {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-left: 16px;
+    }
+
+    .variant-links a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 4px 11px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 999px;
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
+
+    .variant-links a:hover {
+      color: var(--gold-accent);
+      border-color: var(--gold-accent);
+    }
+
+    .variant-links a.current {
+      background: rgba(212, 175, 55, 0.18);
+      color: var(--gold-accent);
+      border-color: var(--gold-accent);
+    }
+
+    @media (max-width: 700px) {
+      .variant-links {
+        flex: 1 1 100%;
+        margin-left: 0;
+        order: 3;
+      }
+    }
+</style>
 </head>
 <body>
 
   <!-- Floating Bar (Hidden when saving as PDF) -->
   <div class="action-bar no-print">
     <div class="action-bar-title">
-      Clarissa D. Ward — Portfolio-Matched Resume
+      Clarissa D. Ward — General Resume
     </div>
     <span class="badge">clarissadward.com theme</span>
+    <nav class="variant-links" aria-label="Resume versions">
+      <a href="Clarissa-Ward-Resume.html" class="current">General</a>
+      <a href="resume-dispatch.html">Dispatch</a>
+      <a href="resume-executive-assistant.html">EA / Admin</a>
+      <a href="resume-logistics.html">Logistics</a>
+    </nav>
     <button class="btn-print" onclick="window.print()">Save as PDF / Print</button>
-    
+
   </div>
 
   <main class="resume-sheet">
@@ -468,6 +513,7 @@
         <div class="contact-grid">
           <div>Antioch, CA &bull; (925) 457-4360</div>
           <div><a href="mailto:clarissa.d.ward@gmail.com">clarissa.d.ward@gmail.com</a></div>
+          <div><a href="https://www.linkedin.com/in/clarissadward">linkedin.com/in/clarissadward</a></div>
           <div><a class="portfolio-link" href="https://clarissadward.com">clarissadward.com</a></div>
         </div>
       </div>
@@ -536,7 +582,6 @@
             <li>Designed and implemented structured onboarding programs, mentorship guidelines, and <strong>Individual Development Plans (IDPs)</strong> that elevated driver readiness, safety compliance, and team retention.</li>
           </ul>
         </div>
-
         <div class="job">
           <div class="job-header">
             <div class="job-title-group">
@@ -547,10 +592,10 @@
           </div>
           <ul class="job-bullets">
             <li>Engineered and deployed custom data-tracking systems to organize complex daily workflows, eliminating administrative bottlenecks and improving cross-departmental visibility.</li>
+            <li>First line of support for <strong>hundreds of nationwide customer accounts</strong>, handling quotes, orders, and account issues for heavy earthmoving equipment rental and sales.</li>
             <li>Coordinated commercial fleet availability, customer dispatch schedules, and rental contract administration to maximize fleet utilization and service turnaround.</li>
           </ul>
         </div>
-
         <div class="job">
           <div class="job-header">
             <div class="job-title-group">
@@ -564,7 +609,6 @@
             <li>Streamlined field-to-office communication protocols and optimized daily resource allocation to prevent downtime and minimize overall job costs.</li>
           </ul>
         </div>
-
         <div class="job">
           <div class="job-header">
             <div class="job-title-group">
@@ -578,7 +622,6 @@
             <li>Authored standardized operating procedures (SOPs) for dispatch workflows, heavy-haul permitting, and third-party vendor management while supporting VP-level operational initiatives.</li>
           </ul>
         </div>
-
         <div class="job">
           <div class="job-header">
             <div class="job-title-group">
@@ -592,7 +635,6 @@
             <li>Enforced strict adherence to union collective bargaining rules, DOT hours-of-service regulations, and time-sensitive retail delivery windows.</li>
           </ul>
         </div>
-
         <div class="job">
           <div class="job-header">
             <div class="job-title-group">
@@ -614,7 +656,7 @@
           <h2 class="section-title">Core Competencies &amp; Technical Stack</h2>
           <div class="skills-list">
             <div class="skill-row">
-              <strong>Analytics &amp; Systems:</strong> Power BI, Advanced Excel (Pivot Tables, Complex Modeling), SAP, ERP &amp; TMS Platforms, Fleet Telematics, Custom Data Trackers
+              <strong>Analytics &amp; Systems:</strong> Power BI, Advanced Excel (Pivot Tables, Complex Modeling), SAP, Oracle, ERP &amp; TMS Platforms, Fleet Telematics, SharePoint, Google Workspace, GitHub, AI-Assisted Tools
             </div>
             <div class="skill-row">
               <strong>Operations &amp; Logistics:</strong> Multi-Site Fleet Management, DOT / FMCSA / OSHA Compliance, SOP Authorship, Heavy Haul Permitting, Resource Allocation, Union Scheduling
@@ -628,9 +670,12 @@
         <section class="section">
           <h2 class="section-title">Education</h2>
           <div class="edu-block">
-            <div class="edu-school">Los Medanos College</div>
+            <div class="edu-school">Pathstream</div>
+            <div class="edu-details">Business Analytics &amp; Operations Certificate (in progress)</div>
+            <div class="edu-meta">Sep 2026 – Present &bull; Ongoing Professional Development</div>
+            <div class="edu-school" style="margin-top:6px;">Los Medanos College</div>
             <div class="edu-details">General Education &amp; Business Operations Coursework</div>
-            <div class="edu-meta">Pittsburg, CA &bull; Ongoing Professional Development</div>
+            <div class="edu-meta">Pittsburg, CA</div>
           </div>
         </section>
       </div>
@@ -640,9 +685,10 @@
   <script>
   (function () {
     var VIRTUAL = '/resume-print-click';
+    var PAGE_PATH = '/Clarissa-Ward-Resume.html';
     function restore() {
       if (location.pathname === VIRTUAL) {
-        try { history.replaceState(null, '', '/Clarissa-Ward-Resume.html'); } catch (e) {}
+        try { history.replaceState(null, '', PAGE_PATH); } catch (e) {}
       }
     }
     document.querySelector('.btn-print').addEventListener('click', function () {

@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clarissa D. Ward | Logistics & Operations Resume</title>
+  <!-- Google Fonts matching clarissadward.com -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy-dark: #0f172a;
+      --navy-mid: #1e293b;
+      --slate-text: #334155;
+      --slate-muted: #64748b;
+      --slate-light: #f8fafc;
+      --border-subtle: #e2e8f0;
+      --gold-accent: #d4af37;
+      --gold-light: #fef9c3;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--slate-text);
+      background-color: #cbd5e1;
+      line-height: 1.45;
+      font-size: 9.5pt;
+      padding: 64px 20px 40px;
+    }
+
+    /* Floating Browser Action Bar (Hidden in PDF) */
+    .action-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: var(--navy-dark);
+      color: var(--white);
+      padding: 10px 24px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      z-index: 1000;
+      border-bottom: 2px solid var(--gold-accent);
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.25);
+    }
+
+    .action-bar-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .action-bar-title span.badge {
+      background: rgba(212, 175, 55, 0.18);
+      color: var(--gold-accent);
+      border: 1px solid var(--gold-accent);
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+
+    .btn-print {
+      margin-left: auto;
+      background: var(--gold-accent);
+      color: var(--navy-dark);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 0.88rem;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    .btn-print:hover {
+      opacity: 0.92;
+      transform: translateY(-1px);
+    }
+
+    }
+
+    /* Resume Page Container */
+    .resume-sheet {
+      max-width: 8.5in;
+      margin: 0 auto;
+      background: var(--white);
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.2);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    /* Header Section */
+    .header {
+      background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy-mid) 100%);
+      color: var(--white);
+      padding: 26px 34px 20px;
+      border-bottom: 3px solid var(--gold-accent);
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .name {
+      font-family: 'Outfit', sans-serif;
+      font-size: 24pt;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+      color: var(--white);
+    }
+
+    .headline {
+      font-family: 'Outfit', sans-serif;
+      font-size: 10.5pt;
+      font-weight: 600;
+      color: var(--gold-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-top: 4px;
+    }
+
+    .contact-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      font-size: 8.8pt;
+      color: #e2e8f0;
+      gap: 2px;
+    }
+
+    .contact-grid a {
+      color: #e2e8f0;
+      text-decoration: none;
+    }
+
+    .contact-grid .portfolio-link {
+      color: var(--gold-accent);
+      font-weight: 600;
+    }
+
+    /* Executive Metrics Ribbon */
+    .metrics-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background: var(--slate-light);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 10px 34px;
+      gap: 12px;
+    }
+
+    .metric-card {
+      border-left: 3px solid var(--gold-accent);
+      padding-left: 10px;
+    }
+
+    .metric-value {
+      font-family: 'Outfit', sans-serif;
+      font-size: 12pt;
+      font-weight: 800;
+      color: var(--navy-dark);
+      line-height: 1.1;
+    }
+
+    .metric-label {
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: var(--slate-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    /* Main Content Body */
+    .content {
+      padding: 18px 34px 26px;
+    }
+
+    .section {
+      margin-bottom: 14px;
+    }
+
+    .section:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: var(--navy-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      border-bottom: 1.5px solid var(--navy-dark);
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .section-title::after {
+      content: "";
+      display: inline-block;
+      width: 36px;
+      height: 3px;
+      background: var(--gold-accent);
+    }
+
+    /* Summary & Leadership Pillars */
+    .summary-text {
+      font-size: 9.2pt;
+      color: var(--slate-text);
+      margin-bottom: 10px;
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .pillar-box {
+      background: var(--slate-light);
+      border: 1px solid var(--border-subtle);
+      border-top: 2px solid var(--navy-mid);
+      border-radius: 4px;
+      padding: 7px 10px;
+    }
+
+    .pillar-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 8.6pt;
+      font-weight: 700;
+      color: var(--navy-dark);
+      margin-bottom: 2px;
+    }
+
+    .pillar-desc {
+      font-size: 8pt;
+      color: var(--slate-muted);
+      line-height: 1.35;
+    }
+
+    /* Experience Entries */
+    .job {
+      margin-bottom: 11px;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .job:last-child {
+      margin-bottom: 0;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin-bottom: 3px;
+    }
+
+    .job-title-group {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .job-role {
+      font-family: 'Outfit', sans-serif;
+      font-size: 10pt;
+      font-weight: 700;
+      color: var(--navy-dark);
+    }
+
+    .job-company {
+      font-size: 9.2pt;
+      font-weight: 600;
+      color: var(--slate-muted);
+    }
+
+    .job-dates {
+      font-family: 'Outfit', sans-serif;
+      font-size: 8.3pt;
+      font-weight: 700;
+      color: var(--navy-mid);
+      background: var(--gold-light);
+      border: 1px solid rgba(212, 175, 55, 0.45);
+      padding: 1px 7px;
+      border-radius: 3px;
+    }
+
+    .job-bullets {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .job-bullets li {
+      position: relative;
+      padding-left: 13px;
+      font-size: 8.9pt;
+      margin-bottom: 2.5px;
+      color: var(--slate-text);
+    }
+
+    .job-bullets li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: var(--gold-accent);
+      font-weight: bold;
+    }
+
+    .job-bullets strong {
+      color: var(--navy-dark);
+      font-weight: 600;
+    }
+
+    /* Bottom Two-Column Layout (Skills & Education) */
+    .bottom-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 18px;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      font-size: 8.6pt;
+    }
+
+    .skill-row strong {
+      font-family: 'Outfit', sans-serif;
+      color: var(--navy-dark);
+      font-weight: 700;
+    }
+
+    .edu-block {
+      font-size: 8.8pt;
+    }
+
+    .edu-school {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      color: var(--navy-dark);
+      font-size: 9.4pt;
+    }
+
+    .edu-details {
+      color: var(--slate-text);
+      margin-top: 2px;
+    }
+
+    .edu-meta {
+      color: var(--slate-muted);
+      font-size: 8.2pt;
+      margin-top: 4px;
+    }
+
+    /* Print & Save-to-PDF Rules */
+    @page {
+      size: letter;
+      margin: 0.3in;
+    }
+
+    @media print {
+      body {
+        background: var(--white);
+        padding: 0;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .resume-sheet {
+        max-width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+      }
+    }
+    /* Mobile: let the floating bar breathe */
+    @media (max-width: 700px) {
+      body {
+        padding: 120px 14px 40px;
+      }
+
+      .action-bar {
+        flex-wrap: wrap;
+        padding: 10px 14px 12px;
+        gap: 8px;
+      }
+
+      .action-bar-title {
+        flex: 1 1 100%;
+        font-size: 0.92rem;
+      }
+
+      .btn-print {
+        margin-left: auto;
+        padding: 8px 14px;
+        font-size: 0.85rem;
+      }
+
+      /* Stats wrap to a 2x2 grid so nothing runs off the right edge */
+      .metrics-bar {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 12px 22px;
+        gap: 10px 16px;
+      }
+
+      .metric-value {
+        font-size: 11pt;
+      }
+
+      .pillars-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .bottom-grid {
+        grid-template-columns: 1fr;
+      }
+  
+    /* Variant switcher (floating bar only; never printed) */
+    .variant-links {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-left: 16px;
+    }
+
+    .variant-links a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 4px 11px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 999px;
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
+
+    .variant-links a:hover {
+      color: var(--gold-accent);
+      border-color: var(--gold-accent);
+    }
+
+    .variant-links a.current {
+      background: rgba(212, 175, 55, 0.18);
+      color: var(--gold-accent);
+      border-color: var(--gold-accent);
+    }
+
+    @media (max-width: 700px) {
+      .variant-links {
+        flex: 1 1 100%;
+        margin-left: 0;
+        order: 3;
+      }
+    }
+</style>
+</head>
+<body>
+
+  <!-- Floating Bar (Hidden when saving as PDF) -->
+  <div class="action-bar no-print">
+    <div class="action-bar-title">
+      Clarissa D. Ward — Logistics & Operations Resume
+    </div>
+    <span class="badge">clarissadward.com theme</span>
+    <nav class="variant-links" aria-label="Resume versions">
+      <a href="Clarissa-Ward-Resume.html">General</a>
+      <a href="resume-dispatch.html">Dispatch</a>
+      <a href="resume-executive-assistant.html">EA / Admin</a>
+      <a href="resume-logistics.html" class="current">Logistics</a>
+    </nav>
+    <button class="btn-print" onclick="window.print()">Save as PDF / Print</button>
+
+  </div>
+
+  <main class="resume-sheet">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-top">
+        <div>
+          <h1 class="name">CLARISSA D. WARD</h1>
+          <div class="headline">Logistics, Supply Chain &amp; Regional Operations Leader</div>
+        </div>
+        <div class="contact-grid">
+          <div>Antioch, CA &bull; (925) 457-4360</div>
+          <div><a href="mailto:clarissa.d.ward@gmail.com">clarissa.d.ward@gmail.com</a></div>
+          <div><a href="https://www.linkedin.com/in/clarissadward">linkedin.com/in/clarissadward</a></div>
+          <div><a class="portfolio-link" href="https://clarissadward.com">clarissadward.com</a></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Key Metrics Bar -->
+    <section class="metrics-bar">
+      <div class="metric-card">
+        <div class="metric-value">$13.9M+</div>
+        <div class="metric-label">Annual Delivered Sales</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">21,600+</div>
+        <div class="metric-label">Annual Deliveries Managed</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">18 Stores / 5 Hubs</div>
+        <div class="metric-label">Regional Fleet Footprint</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">+10% OTD / +20% HC</div>
+        <div class="metric-label">Efficiency &amp; Team Growth</div>
+      </div>
+    </section>
+
+    <div class="content">
+      <!-- Executive Summary & Pillars -->
+      <section class="section">
+        <h2 class="section-title">Executive Profile &amp; Leadership Pillars</h2>
+        <p class="summary-text">
+          Logistics and operations leader with 15+ years spanning warehouse distribution, paint delivery, healthcare supply chain, equipment rental, and heavy civil construction. Builds the systems behind high-volume operations (routes, SOPs, trackers, and dashboards) and leads the teams that run them.
+        </p>
+        <div class="pillars-grid">
+          <div class="pillar-box">
+            <div class="pillar-title">Supply Chain &amp; Distribution</div>
+            <div class="pillar-desc">Multi-site delivery networks, inventory and fleet management, route optimization, and vendor coordination.</div>
+          </div>
+          <div class="pillar-box">
+            <div class="pillar-title">Process &amp; Analytics</div>
+            <div class="pillar-desc">KPI reporting in Power BI and Excel, SOP authorship, utilization analysis, and cost containment.</div>
+          </div>
+          <div class="pillar-box">
+            <div class="pillar-title">People &amp; Performance</div>
+            <div class="pillar-desc">Structured onboarding, IDPs, retention leadership, and data-backed headcount growth.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Professional Experience -->
+      <section class="section">
+        <h2 class="section-title">Professional Experience</h2>
+
+        <div class="job">
+          <div class="job-header">
+            <div class="job-title-group">
+              <span class="job-role">Regional Driver Supervisor (Cal-Bay South)</span>
+              <span class="job-company">| Sherwin-Williams</span>
+            </div>
+            <span class="job-dates">APR 2024 – PRESENT</span>
+          </div>
+          <ul class="job-bullets">
+            <li>Direct regional delivery logistics across <strong>18 stores and 5 terminals</strong> with 18 direct reports, executing <strong>21,600+ annual deliveries</strong> and <strong>$13.9M in delivered sales</strong>.</li>
+            <li>Increased on-time delivery <strong>10%</strong> by analyzing department data to optimize daily utilization, cut costs, and expand coverage <strong>without adding headcount</strong>.</li>
+            <li>Built the data-backed case that cut turnover enough to earn executive approval for a <strong>20% headcount expansion</strong>.</li>
+            <li>Present monthly delivery performance, volume projections, hiring status, and fleet maintenance to VPs and district leadership.</li>
+            <li>Design training programs covering safety, delivery standards, and customer service that bring every employee to consistent standards.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="job-header">
+            <div class="job-title-group">
+              <span class="job-role">Inside Sales Representative / Operations Support</span>
+              <span class="job-company">| H&amp;E Equipment Services</span>
+            </div>
+            <span class="job-dates">MAR 2023 – APR 2024</span>
+          </div>
+          <ul class="job-bullets">
+            <li>Managed <strong>branch inventory</strong>, tracking rental fleet and sales stock and arranging transfers to fill customer needs.</li>
+            <li>Coordinated commercial fleet availability and customer delivery schedules to maximize utilization and service turnaround.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="job-header">
+            <div class="job-title-group">
+              <span class="job-role">Resource Manager</span>
+              <span class="job-company">| D-Line Constructors</span>
+            </div>
+            <span class="job-dates">SEP 2022 – FEB 2023</span>
+          </div>
+          <ul class="job-bullets">
+            <li>Liaison between field and office personnel, aligning <strong>heavy equipment, labor, and materials</strong> across active civil projects to prevent downtime and minimize job costs.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="job-header">
+            <div class="job-title-group">
+              <span class="job-role">Dispatch Manager (Feb 2020 – Aug 2022) &amp; Dispatcher (Apr 2017 – Feb 2020)</span>
+              <span class="job-company">| Goodfellow Bros.</span>
+            </div>
+            <span class="job-dates">APR 2017 – AUG 2022</span>
+          </div>
+          <ul class="job-bullets">
+            <li>Directed logistics for <strong>50+ concurrent jobs</strong>, coordinating <strong>4,000+ equipment and material moves annually</strong> across multi-site operations.</li>
+            <li>Negotiated lower annual vendor rates and authored SOPs for dispatch workflows and <strong>heavy-haul permitting</strong>.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="job-header">
+            <div class="job-title-group">
+              <span class="job-role">Dispatcher / Scheduling Coordinator</span>
+              <span class="job-company">| Safeway Distribution Center</span>
+            </div>
+            <span class="job-dates">SEP 2015 – APR 2017</span>
+          </div>
+          <ul class="job-bullets">
+            <li>Coordinated scheduling and workloads for <strong>400+ employees</strong> at a 24/7 distribution center, partnering with Corporate Traffic to improve route optimization.</li>
+            <li>Created a delivery tracker for shipments needing multi-day follow-up.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div class="job-header">
+            <div class="job-title-group">
+              <span class="job-role">Senior Logistics Coordinator</span>
+              <span class="job-company">| Kaiser Permanente</span>
+            </div>
+            <span class="job-dates">SEP 2011 – SEP 2015</span>
+          </div>
+          <ul class="job-bullets">
+            <li>Directed healthcare supply chain coordination and critical material routing across regional medical facilities.</li>
+            <li>Standardized internal tracking and reporting workflows that improved interdepartmental service reliability.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Skills & Education Grid -->
+      <div class="bottom-grid">
+        <section class="section">
+          <h2 class="section-title">Core Competencies &amp; Technical Stack</h2>
+          <div class="skills-list">
+            <div class="skill-row">
+              <strong>Supply Chain &amp; Fleet:</strong> Multi-Site Delivery Networks, Route Optimization, Inventory Management, Vendor Management, Heavy Haul Permitting, Fleet Utilization
+            </div>
+            <div class="skill-row">
+              <strong>Analytics &amp; Systems:</strong> Power BI, Advanced Excel (Pivot Tables, Complex Modeling), SAP, Oracle, ERP &amp; TMS Platforms, Custom Data Trackers, GitHub, AI-Assisted Tools
+            </div>
+            <div class="skill-row">
+              <strong>Operations Leadership:</strong> SOP Authorship, DOT / FMCSA / OSHA Compliance, Onboarding Architecture, Headcount Justification, Union Scheduling
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Education</h2>
+          <div class="edu-block">
+            <div class="edu-school">Pathstream</div>
+            <div class="edu-details">Business Analytics &amp; Operations Certificate (in progress)</div>
+            <div class="edu-meta">Sep 2026 – Present &bull; Ongoing Professional Development</div>
+            <div class="edu-school" style="margin-top:6px;">Los Medanos College</div>
+            <div class="edu-details">General Education &amp; Business Operations Coursework</div>
+            <div class="edu-meta">Pittsburg, CA</div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script>
+  (function () {
+    var VIRTUAL = '/resume-print-click';
+    var PAGE_PATH = '/resume-logistics.html';
+    function restore() {
+      if (location.pathname === VIRTUAL) {
+        try { history.replaceState(null, '', PAGE_PATH); } catch (e) {}
+      }
+    }
+    document.querySelector('.btn-print').addEventListener('click', function () {
+      try {
+        history.pushState(null, '', VIRTUAL);
+        var s = document.createElement('script');
+        s.type = 'module';
+        s.src = 'https://static.cloudflareinsights.com/beacon.min.js?click=' + Date.now();
+        s.setAttribute('data-cf-beacon', '{"token": "5b971ac2d513477e9c3c6291bf415987", "spa": false, "load": "multi"}');
+        document.body.appendChild(s);
+      } catch (e) {}
+      setTimeout(restore, 8000);
+    });
+    window.addEventListener('afterprint', function () { setTimeout(restore, 2500); });
+  })();
+  </script>
+
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5b971ac2d513477e9c3c6291bf415987", "spa": false, "load": "multi"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
